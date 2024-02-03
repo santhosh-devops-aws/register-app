@@ -12,7 +12,7 @@ pipeline {
     }
    stage("checkout from git"){
      steps{
-       git branch: 'main' credentialsId: 'github' url: 'https://github.com/santhosh-devops-aws/register-app'
+       git branch: 'main', credentialsId: 'github', url: 'https://github.com/santhosh-devops-aws/register-app'
      }
    } 
   stage("Build application"){
